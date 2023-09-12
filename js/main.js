@@ -1,15 +1,14 @@
-
 function MudaDesenho(){
 
     const texto = document.querySelector("h1");
     const texto2 = document.querySelector(".Cavalheiros");
-    const imagem2=document.querySelector("#img2");
+    const imagem2=document.querySelector(".img2");
     const imagem = document.querySelector("img");
-    const valor = document.querySelector('#valor').value;
-
+    const data = document.querySelector('#data').value; 
     
     
-    if(valor=="aries" || valor== "Áries"){
+    if(data >='2023/03/21' && data <='2023/04/20'){        
+        
         texto.innerHTML = "Áries";
         imagem.setAttribute("src","img/mudearies.webp");
         imagem.setAttribute("width","300px");
@@ -19,7 +18,7 @@ function MudaDesenho(){
         imagem2.setAttribute("src","img/aries.png");
         imagem2.setAttribute("height","500px");
     }
-    else if(valor=="touro" || valor=="Touro"){
+    else if(data >='2023/04/21' && data<='2023/05/20'){
         texto.innerHTML = "Touro";
         imagem.setAttribute("src","img/aldebarandetouro.jpg");
         imagem.setAttribute("width","300px");
@@ -29,7 +28,7 @@ function MudaDesenho(){
         imagem2.setAttribute("src","img/touro-.png");
         imagem2.setAttribute("height","500px");
     }
-    else if(valor=="gemeos" || valor=="Gêmeos"){
+    else if(data >='2023/05/' && data<='2023/06/20'){
         texto.innerHTML = "Gêmeos";
         imagem.setAttribute("src","img/sagadegemeos.jpg");
         imagem.setAttribute("width","300px");
@@ -40,7 +39,7 @@ function MudaDesenho(){
         imagem2.setAttribute("height","500px");
     }
 
-    else if(valor=="cancer" || valor=="Câncer"){
+    else if(data >='2023/06/21' && data<='2023/07/22'){
         texto.innerHTML = "Câncer";
         imagem.setAttribute("src","img/mascaradamortecancer.jpg");
         imagem.setAttribute("width","300px");
@@ -51,7 +50,7 @@ function MudaDesenho(){
         imagem2.setAttribute("height","500px");
     }
      
-    else if(valor=="leao" || valor=="Leão"){
+    else if(data >='2023/07/22' && data<='2023/08/22'){
         texto.innerHTML = "Leão";
         imagem.setAttribute("src","img/aioliadeleao.jpg");
         imagem.setAttribute("width","300px");
@@ -62,7 +61,7 @@ function MudaDesenho(){
         imagem2.setAttribute("height","500px");
     }
      
-    else if(valor=="virgem" || valor=="Virgem"){
+    else if(data >='2023/08/23' && data<='2023/09/22'){
         texto.innerHTML = "Virgem";
         imagem.setAttribute("src","img/shakadevirgem.webp");
         imagem.setAttribute("width","300px");
@@ -73,7 +72,7 @@ function MudaDesenho(){
         imagem2.setAttribute("height","500px");
     }
      
-    else if(valor=="libra" || valor=="Libra"){
+    else if(data >='2023/09/23' && data<='2023/10/22'){
         texto.innerHTML = "Libra";
         imagem.setAttribute("src","img/dohkodelibra.webp");
         imagem.setAttribute("width","300px");
@@ -84,7 +83,7 @@ function MudaDesenho(){
         imagem2.setAttribute("height","500px");
     }
      
-    else if(valor=="escorpiao" || valor=="Escorpião"){
+    else if(data >='2023/101/23' && data<='2023/11/21'){
         texto.innerHTML = "Escorpião";
         imagem.setAttribute("src","img/milodeescorpiao.webp");
         imagem.setAttribute("width","300px");
@@ -95,7 +94,7 @@ function MudaDesenho(){
         imagem2.setAttribute("height","500px");
     }
      
-    else if(valor=="sagitario" || valor=="Sagitário"){
+    else if(data >='2023/11/22' && data<='2023/12/21'){
         texto.innerHTML = "Sagitário";
         imagem.setAttribute("src","img/aiolosdesagitario.webp");
         imagem.setAttribute("width","300px");
@@ -106,7 +105,7 @@ function MudaDesenho(){
         imagem2.setAttribute("height","500px");
     }
 
-    else if(valor=="capricornio" || valor=="Capricórnio"){
+    else if(data >='2023/10/22' && data<='2023/01/20'){
         texto.innerHTML = "Capricórnio";
         imagem.setAttribute("src","img/shuradecapricornio.png");
         imagem.setAttribute("width","300px");
@@ -117,7 +116,7 @@ function MudaDesenho(){
         imagem2.setAttribute("height","500px");
     }
      
-    else if(valor=="aquario" || valor=="Aquário"){
+    else if(data >='2023/01/21' && data<='2023/02/18'){
         texto.innerHTML = "Aquário";
         imagem.setAttribute("src","img/kamusdeaquario.png");
         imagem.setAttribute("width","300px");
@@ -128,7 +127,7 @@ function MudaDesenho(){
         imagem2.setAttribute("height","500px");
     }
      
-    else if(valor=="peixes"|| valor=="Peixes"){
+    else if(data >='2023/02/19' && data<='2023/03/20'){
         texto.innerHTML = "Peixes";
         imagem.setAttribute("src","img/afroditedepeixes.webp");
         imagem.setAttribute("width","300px");
@@ -145,6 +144,5 @@ function MudaDesenho(){
         document.body.style.backgroundColor = 'red';
         document.body.style.color = 'white';
     }
-
 
 }
